@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Formulario de Pokemon{% endblock title %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+
+        <div class="row d-flex justify-contend-center">
+            <div class="col-md-6">
+                <div>
+                    <label for= "usernamer">Usuario: </label>
+                    <input type="text" name="usernamer" id="usernamer" class="form-control">
+                </div>
+                <div>
+                    <label for= "password">Contraseña: </label>
+                    <input type= "password" name="password" id="password" class="form-control">
+                </div>
+        </div>
+
+        <button type="submit" class= "btn btn-primary">Ingresar</button>
+        <a href="{% url "pokedex:index" %}" class= "btn btn-secondary">Regresar</a>
+    </form>
+{% endblock %}
