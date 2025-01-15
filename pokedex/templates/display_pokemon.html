@@ -6,9 +6,9 @@
     <img src = "{{pokemon.picture.url}}" alt  = "...">
     <ul>
         <li>Nombre: {{ pokemon.name }}</li>
-        <li>Tipo: {{ pokemon.type }}</li>
+        <li>Tipo: {{ pokemon.get_type_display }}</li>
         <li>Peso: {{ pokemon.weight }}</li>
-        <li>Altura: {{ pokemon.height }} cm</li>
+        <li>Altura: {{ pokemon.height }} m</li>
         <li>Entrenador: {{ pokemon.trainer }}</li>
     </ul>
-{% endblock %}
+{% endblock %}  

@@ -19,7 +19,7 @@ class Pokemon(models.Model):
         ('P', 'Planta'),
         ('E', 'Eléctrico'),
         ('L', 'Lagartija'),
-        ('P', 'Psíquico'),
+        ('X', 'Psíquico'),
         ('H', 'Hielo')
     }
     type = models.CharField(max_length=30, choices=POKEMON_TYPES, null = False)

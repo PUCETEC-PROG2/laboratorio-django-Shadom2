@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Entrenadores{% endblock title %}
+{% block content %}
+    <h3>Entrenadores</h3>
+    <ul class="list-group">
+        {% for trainer in trainers %}
+        <li class="list-group-item">
+            <a href="trainer/{{trainer.id}}">{{ trainer | capfirst }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
